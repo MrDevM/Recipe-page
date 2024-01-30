@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Nutmeg: hsl(14, 45%, 36%);
+  --D-R: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --R-white: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --light-gray: hsl(30, 18%, 87%);
+  --Wenge-brown: hsl(30, 10%, 34%);
+  --Dark-ch: hsl(24, 5%, 18%);
+}
+body {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Eggshell);
+  font-family: "Outfit", sans-serif;
+}
+main {
+  max-width: 46rem;
+  padding: 2.3rem 2.3rem 0 2.3rem;
+  background-color: var(--white);
+  border-radius: 1.56rem;
+  margin: 3rem 0rem;
+}
+.imge {
+  width: 100%;
+}
+img {
+  display: block;
+  width: 100%;
+  border-radius: 0.7rem;
+}
+h1 {
+  font-size: 2.5rem;
+  color: var(--Dark-ch);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 1.9rem;
+  color: var(--Nutmeg);
+}
+h3 {
+  font-size: 1.35rem;
+  color: var(--D-R);
+  margin-bottom: 0.5rem;
+}
+h1,
+h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+}
+p {
+  line-height: 1.5rem;
+  color: var(--Wenge-brown);
+}
+.prep {
+  padding: 1.3rem 2rem;
+  background-color: var(--R-white);
+  border-radius: 0.7rem;
+  margin: 1.7rem 0;
+}
+.ing {
+  border-bottom: 1px solid var(--light-gray);
+}
+.ins {
+  border-bottom: 1px solid var(--light-gray);
+  /* margin: 1rem 0rem; */
+}
+::marker {
+  color: var(--D-R);
+  font-weight: 900;
+  font-size: 16px;
+}
+li {
+  line-height: 2rem;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  color: var(--Wenge-brown);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: var(--Wenge-brown);
+}
+td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--light-gray);
+}
+td.value {
+  color: var(--Nutmeg);
+  font-weight: 700;
+}
+.last td {
+  border: none;
+}
+.space,
+.tablep {
+  padding: 1rem 0 1.6rem 0;
+}
+.larg {
+  margin-top: 1rem;
+}
+@media screen and (max-width: 400px) {
+  main {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  img {
+    border-radius: 0;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 2.2rem;
+  }
+  .main {
+    padding: 2rem 1.5rem 0 1.5rem;
+  }
+}
